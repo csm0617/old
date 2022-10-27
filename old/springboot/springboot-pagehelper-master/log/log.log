@@ -1,0 +1,62 @@
+2022-10-14 21:35:22.436  INFO 19148 --- [restartedMain] wuhobin.SpringbootMybatisApplication     : Starting SpringbootMybatisApplication using Java 1.8.0_131 on DESKTOP-TIRG5NK with PID 19148 (E:\idea_java_project\springboot\springboot-pagehelper-master\springboot-pagehelper-master\target\classes started by 43975 in E:\idea_java_project\springboot\springboot-pagehelper-master)
+2022-10-14 21:35:22.439 DEBUG 19148 --- [restartedMain] wuhobin.SpringbootMybatisApplication     : Running with Spring Boot v2.4.3, Spring v5.3.4
+2022-10-14 21:35:22.440  INFO 19148 --- [restartedMain] wuhobin.SpringbootMybatisApplication     : No active profile set, falling back to default profiles: default
+2022-10-14 21:35:22.559  INFO 19148 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-14 21:35:22.560  INFO 19148 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-14 21:35:23.987  INFO 19148 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-14 21:35:24.000  INFO 19148 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-14 21:35:24.001  INFO 19148 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-10-14 21:35:24.093  INFO 19148 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-14 21:35:24.093  INFO 19148 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1531 ms
+2022-10-14 21:35:24.641  INFO 19148 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-10-14 21:35:24.725  INFO 19148 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-10-14 21:35:25.013  INFO 19148 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-14 21:35:25.046  INFO 19148 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-14 21:35:25.055  INFO 19148 --- [restartedMain] wuhobin.SpringbootMybatisApplication     : Started SpringbootMybatisApplication in 3.661 seconds (JVM running for 6.365)
+2022-10-14 21:35:49.691  INFO 19148 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-14 21:35:49.692  INFO 19148 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-14 21:35:49.693  INFO 19148 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-14 21:35:49.785  INFO 19148 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-10-14 21:35:49.940 DEBUG 19148 --- [http-nio-8080-exec-1] w.dao.UserDao.listUserByName_COUNT       : ==>  Preparing: SELECT count(0) FROM mybatis.user
+2022-10-14 21:35:49.963 DEBUG 19148 --- [http-nio-8080-exec-1] w.dao.UserDao.listUserByName_COUNT       : ==> Parameters: 
+2022-10-14 21:35:49.986 DEBUG 19148 --- [http-nio-8080-exec-1] w.dao.UserDao.listUserByName_COUNT       : <==      Total: 1
+2022-10-14 21:35:49.988 DEBUG 19148 --- [http-nio-8080-exec-1] wuhobin.dao.UserDao.listUserByName       : ==>  Preparing: select * from mybatis.user LIMIT ?
+2022-10-14 21:35:49.989 DEBUG 19148 --- [http-nio-8080-exec-1] wuhobin.dao.UserDao.listUserByName       : ==> Parameters: 2(Integer)
+2022-10-14 21:35:49.990 DEBUG 19148 --- [http-nio-8080-exec-1] wuhobin.dao.UserDao.listUserByName       : <==      Total: 2
+2022-10-14 21:36:34.195 DEBUG 19148 --- [http-nio-8080-exec-3] wuhobin.dao.UserDao.queryUserById        : ==>  Preparing: select * from mybatis.user where id=?
+2022-10-14 21:36:34.196 DEBUG 19148 --- [http-nio-8080-exec-3] wuhobin.dao.UserDao.queryUserById        : ==> Parameters: 1(Integer)
+2022-10-14 21:36:34.197 DEBUG 19148 --- [http-nio-8080-exec-3] wuhobin.dao.UserDao.queryUserById        : <==      Total: 1
+2022-10-14 21:44:33.936  INFO 19148 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-10-14 21:44:33.937  INFO 19148 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-10-14 21:44:33.942  INFO 19148 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-10-14 21:44:39.195  INFO 15372 --- [restartedMain] wuhobin.SpringbootMybatisApplication     : Starting SpringbootMybatisApplication using Java 1.8.0_131 on DESKTOP-TIRG5NK with PID 15372 (E:\idea_java_project\springboot\springboot-pagehelper-master\springboot-pagehelper-master\target\classes started by 43975 in E:\idea_java_project\springboot\springboot-pagehelper-master)
+2022-10-14 21:44:39.199  INFO 15372 --- [restartedMain] wuhobin.SpringbootMybatisApplication     : No active profile set, falling back to default profiles: default
+2022-10-14 21:44:39.243  INFO 15372 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-14 21:44:39.243  INFO 15372 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-14 21:44:40.009  INFO 15372 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2022-10-14 21:44:40.017  INFO 15372 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-14 21:44:40.017  INFO 15372 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-10-14 21:44:40.072  INFO 15372 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-14 21:44:40.072  INFO 15372 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 828 ms
+2022-10-14 21:44:40.392  INFO 15372 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-10-14 21:44:40.441  INFO 15372 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-10-14 21:44:40.608  INFO 15372 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-14 21:44:40.639  INFO 15372 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2022-10-14 21:44:40.648  INFO 15372 --- [restartedMain] wuhobin.SpringbootMybatisApplication     : Started SpringbootMybatisApplication in 1.828 seconds (JVM running for 2.665)
+2022-10-14 21:46:05.115  INFO 15372 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-10-14 21:46:05.116  INFO 15372 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2022-10-14 21:46:09.355  INFO 11984 --- [restartedMain] wuhobin.SpringbootMybatisApplication     : Starting SpringbootMybatisApplication using Java 1.8.0_131 on DESKTOP-TIRG5NK with PID 11984 (E:\idea_java_project\springboot\springboot-pagehelper-master\springboot-pagehelper-master\target\classes started by 43975 in E:\idea_java_project\springboot\springboot-pagehelper-master)
+2022-10-14 21:46:09.357 DEBUG 11984 --- [restartedMain] wuhobin.SpringbootMybatisApplication     : Running with Spring Boot v2.4.3, Spring v5.3.4
+2022-10-14 21:46:09.358  INFO 11984 --- [restartedMain] wuhobin.SpringbootMybatisApplication     : No active profile set, falling back to default profiles: default
+2022-10-14 21:46:09.400  INFO 11984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-14 21:46:09.401  INFO 11984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-14 21:46:10.132  INFO 11984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-14 21:46:10.138  INFO 11984 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-14 21:46:10.139  INFO 11984 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-10-14 21:46:10.200  INFO 11984 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-14 21:46:10.200  INFO 11984 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 798 ms
+2022-10-14 21:46:10.505  INFO 11984 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-10-14 21:46:10.552  INFO 11984 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-10-14 21:46:10.699  INFO 11984 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-14 21:46:10.727  INFO 11984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-14 21:46:10.735  INFO 11984 --- [restartedMain] wuhobin.SpringbootMybatisApplication     : Started SpringbootMybatisApplication in 1.703 seconds (JVM running for 2.457)
